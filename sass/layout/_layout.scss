@@ -1,0 +1,93 @@
+.header {
+  // TODO: Make background image responsive
+  background: url(../../images/bg-hero-mobile.svg) $pale-cyan-color;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 5.5rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: $dark-cyan-color;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 4.2rem;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: left;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    &--1 {
+      align-items: flex-start;
+    }
+  }
+
+  &-icon {
+    margin-right: 2rem;
+
+    &--1 {
+      margin-top: 0.6rem;
+    }
+  }
+}
+
+.navigation-list {
+  list-style: none;
+  margin-bottom: 6.5rem;
+
+  &-item {
+    margin-bottom: 2rem;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  i {
+    font-size: 2.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+}
+
+.copyright-paragraph {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}

@@ -1,5 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+.header {
+  background: url(../../images/bg-hero-mobile.svg) #ebfbff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 5.5rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: #00252e;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 4.2rem;
+}
+
+.contact-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.contact-list-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact-list-item--1 {
+  align-items: flex-start;
+}
+
+.contact-list-icon {
+  margin-right: 2rem;
+}
+
+.contact-list-icon--1 {
+  margin-top: 0.6rem;
+}
+
+.navigation-list {
+  list-style: none;
+  margin-bottom: 6.5rem;
+}
+
+.navigation-list-item {
+  margin-bottom: 2rem;
+}
+
+.navigation-list-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-list a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.social-list i {
+  font-size: 2.5rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.copyright-paragraph {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
 h1,
 h2,
 h3,
@@ -7,6 +101,7 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 * {
@@ -22,4 +117,135 @@ html {
 body {
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 2.5rem;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.logo--footer {
+  width: 17rem;
+  margin-top: 13.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 2.5rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: #ff52bf;
+  color: #ebfbff;
+  padding: 1.2rem 7rem;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+  background-color: #ff1fad;
+}
+
+.btn-primary--cta {
+  padding: 1.8rem 7rem;
+  border-radius: 3rem;
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+.btn-white:hover {
+  background-color: #4d4d4d;
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  padding: 3rem 4rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.card-image {
+  height: 20rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  object-fit: contain;
+}
+
+.card-heading {
+  margin-bottom: 2rem;
+}
+
+.card-content {
+  color: #808d99;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: #fff;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  margin: 0 1.5rem;
+  margin-top: 13.5rem;
+  margin-bottom: -8rem;
+  padding: 5rem 1rem;
+  text-align: center;
+  z-index: 5;
+}
+
+.cta-heading {
+  font-family: inherit;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.showcase {
+  padding: 3.5rem;
+  text-align: center;
+}
+
+.showcase-heading {
+  margin-top: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.showcase-content {
+  margin-bottom: 3.5rem;
 }
