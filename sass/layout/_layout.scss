@@ -1,9 +1,24 @@
 .header {
-  // TODO: Make background image responsive
-  background: url(../../images/bg-hero-mobile.svg) $pale-cyan-color;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
   margin-bottom: 5.5rem;
+
+  &-background-image {
+    position: absolute;
+    background-color: $pale-cyan-color;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -200;
+
+    @media screen and (min-width: $medium-breakpoint) {
+      content: url('../../images/bg-hero-desktop.svg');
+    }
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin-bottom: 10rem;
+  }
 }
 
 .navigation {
@@ -12,17 +27,52 @@
   padding: 2rem;
 }
 
+.logo {
+  width: 13rem;
+
+  &--footer {
+    position: relative;
+    top: -7rem;
+    width: 20rem;
+  }
+}
+
 .footer {
+  position: relative;
   background-color: $dark-cyan-color;
   color: #ffffff;
-  padding: 2rem;
+  padding: 3rem;
+
+  &-items-container {
+    display: grid;
+    padding-top: 20rem;
+
+    @media screen and (min-width: $medium-breakpoint) {
+      grid-template-columns: 1fr 0.5fr 0.5fr;
+      grid-template-rows: 1fr;
+      column-gap: 7rem;
+    }
+
+    @media screen and (min-width: $large-breakpoint) {
+      padding-left: 7rem;
+      padding-right: 7rem;
+      grid-template-columns: 2fr 1.5fr 1.5fr 2fr;
+      column-gap: 7rem;
+    }
+
+    @media screen and (min-width: $extra-large-breakpoint) {
+      padding: 20rem 7rem 0 7rem;
+      grid-template-columns: 2fr 1fr 1fr 2fr;
+      column-gap: 14rem;
+    }
+  }
 }
 
 .contact-list {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  top: -4rem;
+
   list-style: none;
-  margin-bottom: 4.2rem;
 
   &-item {
     display: flex;
@@ -49,12 +99,34 @@
   }
 }
 
+#social {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-rows: 2fr 1fr;
+  text-align: center;
+  margin-top: 3.5rem;
+
+  @media screen and (min-width: $medium-breakpoint) {
+    position: relative;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    position: initial;
+    left: 0;
+    transform: translateX(0);
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
 .navigation-list {
   list-style: none;
-  margin-bottom: 6.5rem;
 
   &-item {
     margin-bottom: 2rem;
+
     a {
       text-decoration: none;
       color: #ffffff;
@@ -66,6 +138,10 @@
   list-style: none;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: $large-breakpoint) {
+    justify-content: flex-start;
+  }
 
   a {
     display: inline-block;
@@ -87,7 +163,5 @@
 
 .copyright-paragraph {
   font-size: 1.3rem;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin: auto 0;
 }

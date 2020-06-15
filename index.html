@@ -22,24 +22,31 @@
   </head>
   <body>
     <header class="header">
+      <img
+        src="images/bg-hero-mobile.svg"
+        alt="Hero Background"
+        class="header-background-image"
+      />
       <nav class="navigation">
         <img src="images/logo.svg" alt="Huddle Logo" class="logo" />
         <a class="btn btn-white ml-auto" href="#">Try it Free</a>
       </nav>
       <div class="showcase">
-        <h2 class="showcase-heading">
-          Build The Community Your Fans Will Love
-        </h2>
         <div class="showcase-content">
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
+          <h2 class="showcase-heading">
+            Build The Community Your Fans Will Love
+          </h2>
+          <div class="showcase-text">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </div>
+          <a class="btn btn-primary mb-5" href="#">Get Started For Free</a>
         </div>
-        <a class="btn btn-primary mb-5" href="#">Get Started For Free</a>
         <img
           src="images/illustration-mockups.svg"
           alt="Discussion Mockups"
-          style="width: 100%;"
+          class="showcase-image"
         />
       </div>
     </header>
@@ -51,25 +58,29 @@
             alt="Grow Together"
             class="card-image"
           />
-          <h3 class="card-heading">Grow Together</h3>
-          <p class="card-content">
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
+          <div class="card-body">
+            <h3 class="card-heading">Grow Together</h3>
+            <p class="card-text">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card card--ltr">
           <img
             src="images/illustration-flowing-conversation.svg"
             alt="Flowing Conversations"
-            class="card-image"
+            class="card-image card-image--left"
           />
-          <h3 class="card-heading">Flowing Conversations</h3>
-          <p class="card-content">
-            You wouldn't paginate a conversation in real life, so why do it
-            online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
+          <div class="card-body card-body--left">
+            <h3 class="card-heading">Flowing Conversations</h3>
+            <p class="card-text">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
         </div>
         <div class="card">
           <img
@@ -77,12 +88,14 @@
             alt="Your Users"
             class="card-image"
           />
-          <h3 class="card-heading">Your Users</h3>
-          <p class="card-content">
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
+          <div class="card-body">
+            <h3 class="card-heading">Your Users</h3>
+            <p class="card-text">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
         </div>
       </div>
       <div class="cta">
@@ -95,74 +108,89 @@
       </div>
     </main>
     <footer class="footer">
-      <img
-        src="images/logo-footer.svg"
-        alt="Huddle Logo"
-        class="logo logo--footer"
-      />
-      <ul class="contact-list">
-        <li class="contact-list-item contact-list-item--1">
+      <div class="footer-items-container">
+        <!-- First item -->
+        <div>
           <img
-            src="images/icon-location.svg"
-            alt="Our Location"
-            class="contact-list-icon contact-list-icon--1"
+            src="images/logo-footer.svg"
+            alt="Huddle Logo"
+            class="logo logo--footer"
           />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          <ul class="contact-list">
+            <li class="contact-list-item contact-list-item--1">
+              <img
+                src="images/icon-location.svg"
+                alt="Our Location"
+                class="contact-list-icon contact-list-icon--1"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </li>
+            <li class="contact-list-item">
+              <img
+                src="images/icon-phone.svg"
+                alt="Phone Number"
+                class="contact-list-icon"
+              />
+              <div>+1-543-123-4567</div>
+            </li>
+            <li class="contact-list-item">
+              <img
+                src="images/icon-email.svg"
+                alt="Email"
+                class="contact-list-icon"
+              />
+              <a href="mailto:example@huddle.com">example@huddle.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Second item -->
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="#">About Us</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#">What We Do</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+
+        <!-- Third item -->
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="#">Career</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Fourth item -->
+        <ul id="social">
+          <ul class="social-list">
+            <a href="#">
+              <i class="lab la-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="lab la-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="lab la-instagram"></i>
+            </a>
+          </ul>
+          <p class="copyright-paragraph">
+            &copy; Copyright 2020 Huddle. All rights reserved.
           </p>
-        </li>
-        <li class="contact-list-item">
-          <img
-            src="images/icon-phone.svg"
-            alt="Phone Number"
-            class="contact-list-icon"
-          />
-          <div>+1-543-123-4567</div>
-        </li>
-        <li class="contact-list-item">
-          <img
-            src="images/icon-email.svg"
-            alt="Email"
-            class="contact-list-icon"
-          />
-          <a href="mailto:example@huddle.com">example@huddle.com</a>
-        </li>
-      </ul>
-      <ul class="navigation-list">
-        <li class="navigation-list-item">
-          <a href="#">About Us</a>
-        </li>
-        <li class="navigation-list-item">
-          <a href="#">What We Do</a>
-        </li>
-        <li class="navigation-list-item">
-          <a href="#">FAQ</a>
-        </li>
-        <li class="navigation-list-item">
-          <a href="#">Career</a>
-        </li>
-        <li class="navigation-list-item">
-          <a href="#">Blog</a>
-        </li>
-        <li class="navigation-list-item">
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-      <ul class="social-list">
-        <a href="#">
-          <i class="lab la-facebook-f"></i>
-        </a>
-        <a href="#">
-          <i class="lab la-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="lab la-instagram"></i>
-        </a>
-      </ul>
-      <p class="copyright-paragraph">
-        &copy; Copyright 2020 Huddle. All rights reserved.
-      </p>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
