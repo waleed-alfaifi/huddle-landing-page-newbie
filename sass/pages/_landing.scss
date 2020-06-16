@@ -20,22 +20,16 @@
     margin-bottom: 3.5rem;
   }
 
-  @media screen and (min-width: $medium-breakpoint) {
-    &-image {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-
   @media screen and (min-width: $large-breakpoint) {
     flex-direction: row;
 
-    &-image {
-      width: 50%;
-      margin-left: 1.5rem;
+    &-image-container {
+      flex: 50%;
+      margin-left: 2rem;
     }
 
     &-content {
+      flex: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
