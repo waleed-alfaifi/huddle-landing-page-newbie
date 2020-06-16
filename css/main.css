@@ -384,22 +384,16 @@ body {
   margin-bottom: 3.5rem;
 }
 
-@media screen and (min-width: 600px) {
-  .showcase-image {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .showcase {
     flex-direction: row;
   }
-  .showcase-image {
-    width: 50%;
-    margin-left: 1.5rem;
+  .showcase-image-container {
+    flex: 50%;
+    margin-left: 2rem;
   }
   .showcase-content {
+    flex: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
