@@ -137,6 +137,7 @@
 .social-list {
   list-style: none;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 
   @media screen and (min-width: $large-breakpoint) {
